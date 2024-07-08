@@ -15,11 +15,11 @@
          </tr>
          <tr>
              <th>商品名</th>
-             <td>{{ $product->title }}</td>
+             <td>{{ $product->product_name }}</td>
          </tr>
          <tr>
              <th>価格</th>
-             <td>{{ $product->content }}</td>
+             <td>{{ $product->price }}</td>
          </tr>    
          <tr>
              <th>作成日時</th>
@@ -29,6 +29,12 @@
              <th>更新日時</th>
              <td>{{ $product->updated_at }}</td>
          </tr>      
+         <tr>
+             <th>画像</th>
+             <td>
+                 <img src="{{ asset('/storage/products/' . $product->image_name) }}" alt="アップロードした画像ファイル">
+             </td>
+         </tr>     
      </table>
      
 

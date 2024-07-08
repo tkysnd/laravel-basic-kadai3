@@ -34,6 +34,6 @@ return new class extends Migration
         // $table->dropForeign(['vendor_code']);
         // // ロールバック時にvendor_codeカラムを削除する
         // $table->dropColumn('vendor_code');
-        });
+        // });
     }
 };
