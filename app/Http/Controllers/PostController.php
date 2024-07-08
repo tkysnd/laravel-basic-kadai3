@@ -13,8 +13,8 @@ class PostController extends Controller
         $posts = DB::table('posts')->get();
         return view('posts.index', compact('posts'));
     }
-    // public function show($id){
-    //     $posts = Post::find($id)
-    //     return view('posts.index', compact('posts'));
-    // }
+    public function show($id){
+        $singlepost = Post::find($id);
+        return view('posts.show', compact('singlepost'));
+    }
 }
